@@ -1,14 +1,14 @@
-# Javascript In Depth
+# Learn Javascript 
 
 ## Basics features
 
-**Closure** 
-Closures  are a way to 'remember' a function's variable even after it has finished running.
+**Closure** \n
+Closures  are a way to 'remember' a function's variable even after it has finished running. \n
 
 **Example** 
- function makeAdder(x) { 
-    function add(y) {   
-        return x + y;
+ function makeAdder(x) { \n
+    function add(y) {   \n
+        return x + y;   \n
     }
     return add;
 } 
