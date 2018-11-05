@@ -6,8 +6,8 @@
 Closures  are a way to 'remember' a function's variable even after it has finished running.
 
 **Example** 
-* function makeAdder(x) {
-*    function add(y) {
+ function makeAdder(x) { 
+    function add(y) {   
         return x + y;
     }
     return add;
