@@ -21,7 +21,7 @@ console.log( `41 + 1 = ${plusOne( 41 )}` ); // 42
 console.log( `13 + 10 = ${plusTen( 13 )}` ); //23  
 ```
 **Module**
-Construc the module wiht binding functions with the object and return it.
+Construct the module with binding functions with the object and return it.
 
 **Example**
 ```
