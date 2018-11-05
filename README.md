@@ -2,10 +2,10 @@
 
 ## Basics features
 
-**Closure**  
+**Closure:**  
 Closures  are a way to 'remember' a function's variable even after it has finished running. 
 
-**Example** 
+**Example:** 
 ```
 function makeAdder(x) {  
     function add(y) {    
