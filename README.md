@@ -42,3 +42,47 @@ function User() {
 var publicAPI = User();
 publicAPI.login('adi', 'pass');
 ```
+
+**Scopes**
+* JS is works in function scoping. There is a Global scope and function scope to execute the 
+* program. In Javascript compiler first execute the program declare every variable and function 
+* and after that interprator execute the program on that scoping.
+**Example**
+```
+var a = 10;// global scope
+
+function outer() {
+    var b = a; // b in outer function scope and a in global scope
+    console.log(`func: outer, var b: ${b}`);
+    function inner() {
+        var c = b; // b in inner function as declared below while compilation scope and c in inner function scope 
+        console.log(`func: inner, var c: '${c}' before b is undefined but declared`); // c = undefined 
+        var b=20; // inner function scope and value will be assigned while interpretation
+    }
+    inner();
+}
+outer();
+```
+
+**Module Pattern**
+* Bind property in scope-chain in such a way that they are encapsulated inside closure.
+**Example**
+```
+let Person = function() {
+    // these variables are in outer function scopes and encapsulated ...
+    let firstName = "Aditya"; 
+    let lastName = "Awasthi";
+    let instance = {
+        "getFirstName": function(){
+            return firstName;
+        },
+        "getLastName": function(){
+            return lastName;
+        }
+    }
+    return instance;
+}
+
+let person1 = new Person();
+console.log(`Person:: FirstName: ${person1.getFirstName()}, LastName: ${person1.getLastName()}`); 
+```
