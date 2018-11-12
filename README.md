@@ -3,7 +3,7 @@
 ## Basics features
 
 **Closure:**  
-Closures  are a way to 'remember' a function's variable even after it has finished running. 
+* Closures  are a way to 'remember' a function's variable even after it has finished running. 
 
 **Example:** 
 ```
@@ -21,7 +21,7 @@ console.log( `41 + 1 = ${plusOne( 41 )}` ); // 42
 console.log( `13 + 10 = ${plusTen( 13 )}` ); //23  
 ```
 **Module**
-Construct the module with binding functions with the object and return it.
+* Construct the module with binding functions with the object and return it.
 
 **Example**
 ```
@@ -44,7 +44,7 @@ publicAPI.login('adi', 'pass');
 ```
 
 **Scopes**
- JS is works in function scoping. There is a Global scope and function scope to execute the 
+* JS is works in function scoping. There is a Global scope and function scope to execute the 
  program. In Javascript compiler first execute the program declare every variable and function 
  and after that interprator execute the program on that scoping.
 **Example**
@@ -65,7 +65,7 @@ outer();
 ```
 
 **Module Pattern**
- Bind property in scope-chain in such a way that they are encapsulated inside closure.
+* Bind property in scope-chain in such a way that they are encapsulated inside closure.
 **Example**
 ```
 let Person = function() {
