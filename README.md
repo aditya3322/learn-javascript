@@ -47,6 +47,7 @@ publicAPI.login('adi', 'pass');
 * JS is works in function scoping. There is a Global scope and function scope to execute the 
  program. In Javascript compiler first execute the program declare every variable and function 
  and after that interprator execute the program on that scoping.
+
 **Example**
 ```
 var a = 10;// global scope
@@ -66,6 +67,7 @@ outer();
 
 **Module Pattern**
 * Bind property in scope-chain in such a way that they are encapsulated inside closure.
+
 **Example**
 ```
 let Person = function() {
